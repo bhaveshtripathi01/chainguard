@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "framework": "create-react-app",
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url"
-  },
-  "regions": ["iad1"]
-}
