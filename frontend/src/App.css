@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #060612;
+    --bg-secondary: #0c0c1e;
+    --bg-card: #0f0f23;
+    --bg-card-hover: #141430;
+    --accent-primary: #00ff88;
+    --accent-secondary: #00d4ff;
+    --accent-purple: #7c3aed;
+    --accent-red: #ff3366;
+    --accent-orange: #ff8c00;
+    --accent-yellow: #ffd700;
+    --text-primary: #e8e8f0;
+    --text-secondary: #8888aa;
+    --text-muted: #444466;
+    --border-primary: #1a1a3e;
+    --border-accent: #00ff8830;
+    --glow-green: 0 0 20px #00ff8840;
+    --glow-blue: 0 0 20px #00d4ff40;
+    --glow-purple: 0 0 20px #7c3aed40;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(ellipse at 20% 50%, #0d0d2e 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, #0a0a1e 0%, transparent 50%);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+    background: var(--accent-primary);
+    border-radius: 2px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+@keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 10px #00ff8830; }
+    50% { box-shadow: 0 0 30px #00ff8860; }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Grid background */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Button base */
+button {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Outfit', sans-serif;
+}
+
+button:hover { opacity: 0.9; transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+/* Mono font for code */
+.mono { font-family: 'Space Mono', monospace; }
