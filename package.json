@@ -1,0 +1,8 @@
+{
+  "name": "chainguard",
+  "version": "1.0.0",
+  "description": "Audit Smart Contract Platform",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  }
+}
