@@ -8,9 +8,9 @@ const History = () => {
     const [audits, setAudits] = useState([])
     const [isLoading, setIsLoading] = useState(true)
 
-    useEffect(() => {
-        fetchHistory()
-    }, [])
+useEffect(() => {
+  fetchHistory();
+}, [fetchHistory]);
 
     const fetchHistory = async () => {
         try {

@@ -89,7 +89,6 @@ const CodeEditor = ({ onSubmit, isLoading }) => {
                 <button
                     onClick={loadSample}
                     style={{
-                        backgroundColor: "transparent",
                         color: "#00ff88",
                         border: "1px solid #00ff8830",
                         padding: "8px 16px",
