@@ -33,10 +33,14 @@ ChainGuard is a full-stack decentralized application that helps developers secur
 
 
 ### Vulnerability Report
-![Results](./assets/results.png)
+<img width="904" height="492" alt="image" src="https://github.com/user-attachments/assets/db63b3af-82a7-4186-963e-451d66d5d000" />
+<img width="929" height="504" alt="image" src="https://github.com/user-attachments/assets/1bfb1a08-cfd1-409b-8435-2b276950d1bd" />
+
+
 
 ### Audit History
-![History](./assets/history.png)
+<img width="928" height="485" alt="image" src="https://github.com/user-attachments/assets/2e691891-a356-4401-b84d-75c9184828b2" />
+
 
 ---
 
